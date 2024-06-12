@@ -14,7 +14,6 @@ export default function NavBar() {
   }
 
   const navLinks: navLink[] = [
-    { text: "Home", url: "/" },
     { text: "News", url: "/news" },
     { text: "Events", url: "/events" },
     { text: "Scientists", url: "/scientists" },
@@ -29,9 +28,12 @@ export default function NavBar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="text-white text-2xl font-poppins font-bold">
+            <Link
+              className="text-white text-2xl font-poppins font-bold"
+              href="/"
+            >
               SETI INSTITUTE.
-            </div>
+            </Link>
           </div>
           <div className="-mr-2 flex md:hidden">
             <button
