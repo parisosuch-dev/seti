@@ -58,10 +58,10 @@ export default function NavBar() {
             </button>
           </div>
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-baseline space-x-8">
               {navLinks.map((link) => (
                 <Link
-                  className="text-white font-poppins font-medium"
+                  className="text-white font-poppins font-medium hover:underline"
                   href={link.url}
                 >
                   {link.text}
