@@ -23,6 +23,7 @@ const config = {
         inter: ["var(--font-inter)"],
       },
       colors: {
+        obsidian: "#0B1215",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
