@@ -100,7 +100,7 @@ export default function NavBar() {
         leaveTo="opacity-0 scale-95"
       >
         <div
-          className="md:hidden"
+          className="md:hidden overflow-hidden"
           id="mobile-menu"
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
