@@ -12,7 +12,8 @@ export default function Home() {
       <div className="w-full flex flex-col sm:flex-row items-center justify-center space-y-8 sm:space-y-0 py-16">
         <div className="sm:w-1/2 text-left px-4 sm:px-12 sm:space-y-2 flex flex-col">
           <h2 className="text-4xl sm:text-6xl font-poppins font-medium">
-            When we make first contact, you'll be one of the first we contact.
+            When we make first contact, you&apos;ll be one of the first we
+            contact.
           </h2>
         </div>
         <div className="sm:w-1/2 flex flex-col items-center space-y-2 px-4 sm:px-12">
