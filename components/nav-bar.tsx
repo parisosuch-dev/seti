@@ -106,7 +106,7 @@ export default function NavBar() {
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
         >
-          <div className="flex flex-col pt-8 items-center min-h-screen space-y-4 bg-obsidian">
+          <div className="flex flex-col pt-8 items-center min-h-screen space-y-4 bg-obsidian overflow-hidden">
             {navLinks.map((link) => (
               <Link
                 className="text-white text-2xl font-poppins font-medium"
