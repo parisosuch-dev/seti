@@ -8,7 +8,7 @@ export default function VideoSection() {
         allow="autoplay; fullscreen; picture-in-picture"
         allowFullScreen
         title="Vimeo video player"
-        className="h-[180px] w-[320px] sm:h-[360px] sm:w-[640px] p-4"
+        className="h-full w-full sm:h-[360px] sm:w-[640px] p-4"
       />
       <h2 className="sm:w-1/2 text-4xl sm:text-6xl text-center font-poppins font-medium p-4">
         Finding Life Beyond Earth is No Longer a Dream
