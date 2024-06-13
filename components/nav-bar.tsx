@@ -19,7 +19,7 @@ export default function NavBar() {
   };
 
   const handleTouchEnd = () => {
-    if (touchEndY.current - touchStartY.current > -50) {
+    if (touchStartY.current - touchEndY.current > 50) {
       setIsOpen(false); // Close menu on swipe up
     }
   };
