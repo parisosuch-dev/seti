@@ -63,6 +63,7 @@ export default function NavBar() {
                 <Link
                   className="text-white font-poppins font-medium hover:underline"
                   href={link.url}
+                  key={link.url}
                 >
                   {link.text}
                 </Link>
@@ -88,6 +89,7 @@ export default function NavBar() {
               <Link
                 className="text-white text-2xl font-poppins font-medium"
                 href={link.url}
+                key={link.url}
               >
                 {link.text}
               </Link>
