@@ -1,21 +1,24 @@
-import Starfield from "@/components/star-field";
+import LandingHero from "@/components/landing-hero";
 
 export default function Home() {
   return (
     <div className="h-full">
-      <div className="h-1/2 sm:h-full bg-obsidian p-2 sm:p-0 flex flex-col items-center justify-center relative">
-        <Starfield
-          starCount={4000}
-          starColor={[255, 255, 255]}
-          speedFactor={0.05}
-          backgroundColor="black"
-        />
-        <h1 className="text-white text-6xl sm:text-9xl text-center font-poppins font-black absolute">
-          DO THE STARS GAZE BACK?
-        </h1>
-      </div>
       <div>
-        <h2 className="bg-blue-900 h-[500px]">Some text content</h2>
+        <LandingHero />
+        <div className="flex flex-col-reverse sm:flex-row w-full items-center justify-end">
+          <iframe
+            src="https://player.vimeo.com/video/866455832?h=3a0f40ae44&title=0&byline=0&portrait=0"
+            width="640"
+            height="360"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            title="Vimeo video player"
+            className="h-[240px] w-[426px] sm:h-[360px] sm:w-[640px] p-4"
+          />
+          <h2 className="sm:w-1/2 text-4xl sm:text-6xl text-center font-poppins font-medium p-4">
+            Finding Life Beyond Earth is No Longer a Dream
+          </h2>
+        </div>
       </div>
     </div>
   );
