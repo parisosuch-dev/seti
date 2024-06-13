@@ -3,10 +3,26 @@
 import { Transition } from "@headlessui/react";
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import { useState, Fragment } from "react";
+import { useState, Fragment, useRef } from "react";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const touchStartY = useRef(0);
+  const touchEndY = useRef(0);
+
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    touchStartY.current = e.changedTouches[0].clientY;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    touchEndY.current = e.changedTouches[0].clientY;
+  };
+
+  const handleTouchEnd = () => {
+    if (touchEndY.current - touchStartY.current > 50) {
+      setIsOpen(false); // Close menu on swipe down
+    }
+  };
 
   interface navLink {
     text: string;
@@ -83,7 +99,13 @@ export default function NavBar() {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <div className="md:hidden" id="mobile-menu">
+        <div
+          className="md:hidden"
+          id="mobile-menu"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
           <div className="flex flex-col pt-8 items-center min-h-screen space-y-4 bg-obsidian">
             {navLinks.map((link) => (
               <Link
