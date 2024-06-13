@@ -3,7 +3,7 @@
 import { Transition } from "@headlessui/react";
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import { useState, Fragment, useRef } from "react";
+import { useState, Fragment, useRef, useEffect } from "react";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,6 +38,14 @@ export default function NavBar() {
     { text: "Education", url: "/education" },
     { text: "About", url: "/about" },
   ];
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden"; // Prevent scrolling
+    } else {
+      document.body.style.overflow = "auto"; // Allow scrolling
+    }
+  }, [isOpen]);
 
   return (
     <div className="bg-obsidian fixed top-0 left-0 z-10 w-full">
@@ -100,13 +108,13 @@ export default function NavBar() {
         leaveTo="opacity-0 scale-95"
       >
         <div
-          className="md:hidden overflow-hidden"
+          className="md:hidden"
           id="mobile-menu"
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
         >
-          <div className="flex flex-col pt-8 items-center min-h-screen space-y-4 bg-obsidian overflow-hidden">
+          <div className="flex flex-col pt-8 items-center min-h-screen space-y-4 bg-obsidian">
             {navLinks.map((link) => (
               <Link
                 className="text-white text-2xl font-poppins font-medium"
