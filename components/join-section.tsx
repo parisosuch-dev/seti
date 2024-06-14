@@ -12,7 +12,7 @@ export default function JoinSection() {
         </h2>
       </div>
       <div className="sm:w-1/2 flex flex-col items-center space-y-2 px-4 sm:px-12">
-        <p className="text-lg sm:w-3/4 sm:text-xl font-light">
+        <p className="text-md sm:w-3/4 sm:text-xl font-light">
           Join the SETI family, stay up-to-date on news, missions, events and
           more with our newsletter.
         </p>
