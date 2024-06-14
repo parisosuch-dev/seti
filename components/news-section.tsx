@@ -39,7 +39,10 @@ export default function NewsSection() {
       </h2>
       <div className="grid grid-col-1 sm:grid-cols-2 w-full justify-items-center gap-y-4 pt-4">
         {articles.map((artcile) => (
-          <div className="flex flex-col items-center space-y-2 h-full hover:translate-y-[-10px] transform transition-transform duration-300 ease-in-out">
+          <div
+            key={artcile.title}
+            className="flex flex-col items-center space-y-2 h-full hover:translate-y-[-10px] transform transition-transform duration-300 ease-in-out"
+          >
             <div className="w-[300px] h-[150px] sm:w-[400px] sm:h-[200px] relative">
               <Image
                 src={artcile.image}
