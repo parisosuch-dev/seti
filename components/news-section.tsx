@@ -33,7 +33,7 @@ export default function NewsSection() {
   ];
 
   return (
-    <div className="px-4 sm:px-12">
+    <div className="bg-gray-100 px-4 sm:px-12 py-4 sm:py-12">
       <h2 className="text-4xl sm:text-6xl font-poppins font-medium text-center">
         News
       </h2>
@@ -54,7 +54,7 @@ export default function NewsSection() {
             </div>
             <div className="w-[300px] sm:w-[400px]">
               <Badge variant="secondary">{artcile.date}</Badge>
-              <h3 className="text-md sm:text-xl font-medium font-poppins">
+              <h3 className="text-md sm:text-xl font-medium hover:underline font-poppins">
                 {artcile.title}
               </h3>
             </div>

@@ -1,3 +1,4 @@
+import DontationSection from "@/components/donation-section";
 import JoinSection from "@/components/join-section";
 import LandingHero from "@/components/landing-hero";
 import NewsSection from "@/components/news-section";
@@ -10,6 +11,7 @@ export default function Home() {
       <VideoSection />
       <JoinSection />
       <NewsSection />
+      <DontationSection />
     </div>
   );
 }
