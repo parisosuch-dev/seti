@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Badge } from "./ui/badge";
+import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 export default function NewsSection() {
   interface NewsArticle {
@@ -25,19 +27,19 @@ export default function NewsSection() {
       image: "/images/technosearch-1024x600.jpg",
       date: "Jun 12 2024",
     },
-    {
-      title: 'Decoding the Message from "A Sign in Space": A Year-Long Journey',
-      image: "/images/A Sign in Space.jpg",
-      date: "Jun 11 2024",
-    },
+    // {
+    //   title: 'Decoding the Message from "A Sign in Space": A Year-Long Journey',
+    //   image: "/images/A Sign in Space.jpg",
+    //   date: "Jun 11 2024",
+    // },
   ];
 
   return (
-    <div className="bg-gray-100 px-4 sm:px-12 py-4 sm:py-12">
+    <div className="bg-gray-100 flex flex-col items-center px-4 sm:px-12 py-4 sm:py-12">
       <h2 className="text-4xl sm:text-6xl font-poppins font-medium text-center">
         News
       </h2>
-      <div className="grid grid-col-1 sm:grid-cols-2 w-full justify-items-center gap-y-4 pt-4">
+      <div className="grid grid-col-1 sm:grid-cols-3 w-full justify-items-center gap-y-4 pt-4 sm:pt-8">
         {articles.map((artcile) => (
           <div
             key={artcile.title}
@@ -60,6 +62,12 @@ export default function NewsSection() {
             </div>
           </div>
         ))}
+      </div>
+      <div className="pt-8 flex flex-row group items-center justify-center space-x-1">
+        <Link className="font-medium group-hover:underline" href="/news">
+          More
+        </Link>
+        <ArrowLongRightIcon className="block h-6 w-6 group-hover:translate-x-1 transform ease-in-out duration-200" />
       </div>
     </div>
   );
