@@ -3,7 +3,7 @@ import { FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="bg-obsidian p-2 sm:p-16 flex flex-col sm:flex-row items-center justify-between">
+    <div className="bg-obsidian p-2 sm:p-16 flex flex-col sm:flex-row space-y-4 sm:space-y-0 items-center justify-between">
       <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 space-x-0 sm:space-x-4">
         <div className="flex flex-row space-x-4">
           <Link
