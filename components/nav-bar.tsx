@@ -49,8 +49,8 @@ export default function NavBar() {
 
   return (
     <div className="bg-obsidian fixed top-0 left-0 z-10 w-full">
-      <div className="max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="px-4 sm:px-6 lg:px-8 w-full">
+        <div className="flex w-full items-center justify-between h-16">
           <div className="flex items-center">
             <Link
               className="text-white text-2xl font-poppins font-bold"
@@ -82,7 +82,7 @@ export default function NavBar() {
             </button>
           </div>
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="flex items-baseline space-x-12">
               {navLinks.map((link) => (
                 <Link
                   className="text-white font-poppins font-medium hover:underline"
