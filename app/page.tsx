@@ -1,4 +1,5 @@
 import DontationSection from "@/components/donation-section";
+import GetInvolved from "@/components/get-involved";
 import JoinSection from "@/components/join-section";
 import LandingHero from "@/components/landing-hero";
 import NewsSection from "@/components/news-section";
@@ -14,6 +15,7 @@ export default function Home() {
       <NewsSection />
       <DontationSection />
       <ResearchSection />
+      <GetInvolved />
     </div>
   );
 }
