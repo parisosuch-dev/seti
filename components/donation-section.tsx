@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 
 export default function DontationSection() {
   return (
-    <div className="w-full flex flex-col sm:flex-row items-center justify-center space-y-8 px-4 sm:px-12 sm:space-y-0 py-16">
+    <div className="w-full flex flex-col sm:flex-row items-center justify-center space-y-8 px-4 sm:px-24 sm:space-y-0 py-16 sm:py-32">
       <h2 className="sm:w-1/2 text-4xl sm:text-6xl font-poppins font-medium text-center sm:text-left">
         We Are a Nonprofit Research Organization
       </h2>
