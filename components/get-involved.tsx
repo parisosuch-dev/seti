@@ -8,13 +8,13 @@ export default function GetInvolved() {
             </h2>
             <div className="flex flex-col w-full space-y-6">
                 <div className="text-center transform transition duration-500 hover:scale-110">
-                    <Link href='#' className="text-2xl bg-obsidian p-2 text-white rounded-lg">Attend an Event</Link>
+                    <Link href='#' className="text-md sm:text-2xl bg-obsidian p-2 text-white rounded-lg">Attend an Event</Link>
                 </div>
                 <div className="text-center transform transition duration-500 hover:scale-110">
-                    <Link href='#' className="text-2xl bg-obsidian p-2 text-white rounded-lg">Listen to a Podcast</Link>
+                    <Link href='#' className="text-md sm:text-2xl bg-obsidian p-2 text-white rounded-lg">Listen to a Podcast</Link>
                 </div>
                 <div className="text-center transform transition duration-500 hover:scale-110">
-                    <Link href='#' className="text-2xl bg-obsidian p-2 text-white rounded-lg">Become a PI or Affiliate</Link>
+                    <Link href='#' className="text-md sm:text-2xl bg-obsidian p-2 text-white rounded-lg">Become a PI or Affiliate</Link>
                 </div>
             </div>
         </div>
